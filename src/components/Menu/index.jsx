@@ -13,7 +13,7 @@ function Menu() {
             setIsOpen(true);
             setTimeout(() => {
                 setIsMenuLoaded(true);
-            }, 300); // Correspondendo ao tempo de transição do CSS
+            }, 300);
         } else {
             setIsMenuLoaded(false);
             setIsOpen(false);
@@ -48,7 +48,8 @@ function Menu() {
                     <BsList size={30} color="#fff" />
                 )}
             </button>
-            <div ref={menuRef} className={`side-menu ${isOpen ? 'open' : ''}`}>
+
+            <nav ref={menuRef} className={`side-menu ${isOpen ? 'open' : ''}`}>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a className="nav-link" href="#">
@@ -74,7 +75,7 @@ function Menu() {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </>
     );
 }

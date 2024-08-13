@@ -1,10 +1,12 @@
 import './style.css';
 import Header from '../Header';
+import Knowledge from '../Knowledge';
 
 function Container() {
     return (
         <div>
-            <Header></Header>
+            <Header/>
+            <Knowledge/>
         </div>
     )
 }
