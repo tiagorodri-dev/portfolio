@@ -1,7 +1,8 @@
 .session-projects {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
+    height: 100vh;
     margin-top: 4em;
 }
 
@@ -14,16 +15,58 @@
     align-items: center;
     gap: 30px;
     margin-top: 2em;
+    padding: 40px;
 }
 
-.project {
-    width: 400px;
-    min-height: 100%;
-    border-radius: 20px;
-    background-color: #343a40;
-    color: white;
-    padding: 30px;
-    box-sizing: border-box;
+.card {
+    width: 500px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #262626;
+}
+
+.card-img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
+    filter: blur(2px);
+}
+
+.card-info {
+    position: absolute;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    color: #eee;
+}
+
+.card:hover .card-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Baloo Da 2', sans-serif;
 }
 
 .icons {
@@ -32,16 +75,15 @@
 }
 
 .description {
-    overflow: hidden;
-    height: 100px;
+    text-align: justify;
 }
 
 .links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
-.links a, h3{
+.links a, h3 {
     text-decoration: none;
     font-size: 18px;
 }

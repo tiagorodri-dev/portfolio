@@ -1,59 +1,84 @@
+import { useState } from "react";
 import Title from "../Title";
 import "./style.css";
-import { useGitHubAutomatedRepos, ProjectIcons, StackIcons } from 'github-automated-repos';
+import { useGitHubAutomatedRepos, StackIcons } from 'github-automated-repos';
 
 function Projects() {
     const data = useGitHubAutomatedRepos("tiagorodri-dev", "deploy");
-    console.log(data)
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const openModal = (project) => {
+        setSelectedProject(project);
+    };
 
     return (
         <section className="session-projects">
             <Title name="Projetos"/>
 
             <div className="projects">
-                { data.map((item) => {
-                    return (
-                        <div className="project" key={item.id}>
-
-                            <img style={{maxWidth: '100%'}} src={item.banner}/>
-
-                            {item.topics.map((icon) => {
-                            return (
-                                <ProjectIcons key={icon} className="project_Icon" itemTopics={icon} />
-                            )
-                            })}
-
-                            <h2 className="name">{item.name}</h2>
-
-                            <p className="description">{item.description}</p>
-
-                            <div className="icons">
-                                {item.topics.map((icon) => {
-                                return (
-                                    <StackIcons
-                                        key={icon}
-                                        className="stack_Icon"
-                                        itemTopics={icon}
-                                    />
-                                )
-                                })}
+                <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLongTitle">
+                                    {selectedProject?.name}
+                                </h5>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-
-                            <div className="links">
-                                <a href={item.homepage} target="_blank">
-                                    <h3>🌐 Site</h3>
-                                </a>
-                                <a href={item.html_url} target="_blank">
-                                    <h3>🔗 Repositório</h3>
-                                </a>
+                            <div className="modal-body">
+                                {selectedProject && (
+                                    <>
+                                        <img
+                                            src={selectedProject.banner}
+                                            alt={`${selectedProject.name} banner`}
+                                            className="img-fluid mb-3"
+                                        />
+                                        <div className="icons">
+                                            {selectedProject.topics.map((icon) => (
+                                                <StackIcons
+                                                    key={icon}
+                                                    className="stack_Icon"
+                                                    itemTopics={icon}
+                                                />
+                                            ))}
+                                        </div>
+                                        <p className="description">{selectedProject.description}</p>
+                                        <div className="links">
+                                            {selectedProject.homepage && (
+                                                <a href={selectedProject.homepage} target="_blank" rel="noopener noreferrer">
+                                                    <h3>🌐 Site</h3>
+                                                </a>
+                                            )}
+                                            <a href={selectedProject.html_url} target="_blank" rel="noopener noreferrer">
+                                                <h3>🔗 Repositório</h3>
+                                            </a>
+                                        </div>
+                                    </>
+                                )}
                             </div>
                         </div>
-                    )
-                })
-                }
+                    </div>
+                </div>
+
+                {data.map((item) => (
+                    <div
+                        className="card"
+                        key={item.id}
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModalCenter"
+                        onClick={() => openModal(item)}
+                    >
+                        <div className="card-img-wrapper">
+                            <img src={item.banner} alt={`${item.name} banner`} />
+                        </div>
+                        <div className="card-info">
+                            <h2 className="name">{item.name}</h2>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
-    )
+    );
 }
 
-export default Projects
+export default Projects;
