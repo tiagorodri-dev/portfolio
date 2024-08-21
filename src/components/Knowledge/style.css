@@ -1,7 +1,9 @@
 .session-knowledge {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: space-around;
+    min-height: 100vh;
+    gap: 75px;
 }
 
 .knowledges {

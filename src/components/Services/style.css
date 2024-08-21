@@ -1,0 +1,116 @@
+/* Estilo da seção de serviços com imagem e efeito parallax */
+.session-services {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url('https://img.freepik.com/vetores-gratis/fundo-moderno-com-um-projeto-abstrato-do-techno_1048-5515.jpg?t=st=1724281313~exp=1724284913~hmac=99189b0108dee79a238f1ccd1ad8f993b55c0920889811fa092b2d430b47899e&w=740') no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: backgroundAnimation 30s linear infinite; /* Animação aplicada */
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.session-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+}
+
+
+/* Contêiner dos serviços */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Alinha os serviços para terem a mesma altura */
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Estilo individual de cada serviço */
+.service {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 250px;
+    /* flex: 1; */
+}
+
+/* Efeito ao passar o mouse */
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do ícone */
+.img-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F80;
+    font-size: 4em;
+}
+
+/* Estilo da informação do serviço */
+.info-service {
+    color: white;
+}
+
+.info-service h3 {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+.info-service p {
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .service {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto; /* Remove a altura mínima para telas pequenas */
+    }
+
+    .img-service {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .service {
+        padding: 20px;
+    }
+    
+    .info-service h3 {
+        font-size: 1.4em;
+    }
+    
+    .info-service p {
+        font-size: 0.9em;
+    }
+}

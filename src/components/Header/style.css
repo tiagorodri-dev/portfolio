@@ -68,32 +68,18 @@ header {
     }
 }
 
-@media (max-width: 575.98px) {
-    /* .banner h1 {
+@media (max-width: 576px) {
+    .banner h1 {
         font-size: 3rem;
-    } */
+    }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-    /* .banner h1 {
+@media (max-width: 360px) {
+    .banner h1 {
+        font-size: 2rem;
+        line-height: 36px;
+    }
+    .banner p {
         font-size: 1.5rem;
-    } */
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    /* .banner h1 {
-        font-size: 5rem;
-    } */
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    /* .banner h1 {
-        font-size: 3rem;
-    } */
-}
-
-@media (min-width: 1200px) {
-    /* .banner h1 {
-        font-size: 3.5rem;
-    } */
+    }
 }

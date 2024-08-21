@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsList, BsX, BsHouse, BsTelephone, BsLightbulb, BsCardChecklist } from "react-icons/bs";
+import { BsList, BsX, BsHouse, BsTelephone, BsLightbulb, BsCardChecklist, BsTools } from "react-icons/bs";
 import './style.css';
 
 function Menu() {
@@ -54,6 +54,12 @@ function Menu() {
                     <li className="nav-item">
                         <a className="nav-link" href="#">
                             <BsHouse /> Home
+                        </a>
+                    </li>
+                    <hr />
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            <BsTools /> Serviços
                         </a>
                     </li>
                     <hr />
