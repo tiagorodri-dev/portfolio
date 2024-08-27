@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsList, BsX, BsHouse, BsTelephone, BsLightbulb, BsCardChecklist, BsTools } from "react-icons/bs";
+import { BsList, BsX } from "react-icons/bs";
 import './style.css';
 
 function Menu() {
@@ -43,7 +43,7 @@ function Menu() {
                 onClick={toggleMenu}
             >
                 {isOpen && isMenuLoaded ? (
-                    <BsX size={30} />
+                    <BsX size={30} color="#000" />
                 ) : (
                     <BsList size={30} color="#fff" />
                 )}
@@ -53,31 +53,27 @@ function Menu() {
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            <BsHouse /> Home
+                            Home
                         </a>
                     </li>
-                    <hr />
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            <BsTools /> Serviços
+                            Serviços
                         </a>
                     </li>
-                    <hr />
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            <BsLightbulb /> Conhecimentos
+                            Conhecimentos
                         </a>
                     </li>
-                    <hr />
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            <BsCardChecklist /> Projetos
+                            Projetos
                         </a>
                     </li>
-                    <hr />
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            <BsTelephone /> Contato
+                            Contato
                         </a>
                     </li>
                 </ul>

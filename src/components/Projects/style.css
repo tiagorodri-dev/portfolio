@@ -17,6 +17,34 @@
     padding: 40px;
 }
 
+.modal-dialog {
+    max-width: 90%; /* Aumenta a largura do modal */
+    height: auto; /* Ajusta a altura */
+}
+
+.modal-body {
+    display: flex;
+    gap: 20px;
+}
+
+.modal-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.modal-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-info {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .card {
     width: 500px;
     cursor: pointer;
@@ -68,9 +96,13 @@
     font-family: 'Baloo Da 2', sans-serif;
 }
 
-.icons {
+.tecnologias {
     display: flex;
     gap: 10px;
+}
+
+.tecnologias h3, .info-project h3 {
+    font-weight: 600;
 }
 
 .description {
@@ -85,4 +117,19 @@
 .links a, h3 {
     text-decoration: none;
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: 95%; /* O modal ocupa quase toda a largura da tela */
+    }
+
+    .modal-body {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+    }
+
+    .modal-image,
+    .modal-info {
+        max-width: 100%; /* A largura máxima é 100% para ocupar toda a tela */
+    }
 }

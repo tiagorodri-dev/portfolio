@@ -28,30 +28,38 @@ function Projects() {
                             <div className="modal-body">
                                 {selectedProject && (
                                     <>
-                                        <img
-                                            src={selectedProject.banner}
-                                            alt={`${selectedProject.name} banner`}
-                                            className="img-fluid mb-3"
-                                        />
-                                        <div className="icons">
-                                            {selectedProject.topics.map((icon) => (
-                                                <StackIcons
-                                                    key={icon}
-                                                    className="stack_Icon"
-                                                    itemTopics={icon}
-                                                />
-                                            ))}
+                                        <div className="modal-image">
+                                            <img
+                                                src={selectedProject.banner}
+                                                alt={`${selectedProject.name} banner`}
+                                                className="img-fluid"
+                                            />
                                         </div>
-                                        <p className="description">{selectedProject.description}</p>
-                                        <div className="links">
-                                            {selectedProject.homepage && (
-                                                <a href={selectedProject.homepage} target="_blank" rel="noopener noreferrer">
-                                                    <h3>🌐 Site</h3>
+                                        <div className="modal-info">
+                                            <div className="tecnologias">
+                                                <h3>Tecnologias:</h3>
+                                                {selectedProject.topics.map((icon) => (
+                                                    <StackIcons
+                                                        key={icon}
+                                                        className="stack_Icon"
+                                                        itemTopics={icon}
+                                                    />
+                                                ))}
+                                            </div>
+                                            <div className="info-project">
+                                                <h3>Informações do projeto:</h3>
+                                                <p className="description">{selectedProject.description}</p>
+                                            </div>
+                                            <div className="links">
+                                                {selectedProject.homepage && (
+                                                    <a href={selectedProject.homepage} target="_blank" rel="noopener noreferrer">
+                                                        <h3>🌐 Site</h3>
+                                                    </a>
+                                                )}
+                                                <a href={selectedProject.html_url} target="_blank" rel="noopener noreferrer">
+                                                    <h3>🔗 Repositório</h3>
                                                 </a>
-                                            )}
-                                            <a href={selectedProject.html_url} target="_blank" rel="noopener noreferrer">
-                                                <h3>🔗 Repositório</h3>
-                                            </a>
+                                            </div>
                                         </div>
                                     </>
                                 )}

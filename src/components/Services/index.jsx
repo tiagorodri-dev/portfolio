@@ -14,7 +14,7 @@ function Services() {
                         <BsCodeSquare />
                     </div>
                     <div className="info-service">
-                        <h3>Desenvolvimento de software</h3>
+                        <h3>Desenvolvimento de software personalizado</h3>
                         <p>Desenvolvimento de sites, landing pages, sistemas web, webapps e aplicativos mobile. Ofereço soluções customizadas que atendem às necessidades específicas de cada projeto, utilizando tecnologias modernas para garantir desempenho e escalabilidade.</p>
                     </div>
                 </section>

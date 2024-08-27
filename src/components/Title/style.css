@@ -6,8 +6,14 @@
 }
 
 .sessao-title h1 {
+    color: #000000;
     display: inline;
     text-align: center;
     font-weight: bolder;
     border-bottom: 4px solid #F80;
+
+        font-size: 2.5em; /* Aumenta o tamanho do título */
+        font-weight: 800; /* Mantém o peso mais pesado */
+
+    
 }
