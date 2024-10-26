@@ -3,7 +3,6 @@
     top: 20px;
     right: 20px;
     z-index: 1001;
-    background-color: transparent;
     border: none;
 }
 
@@ -13,7 +12,7 @@
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #f8f9fa;
+    background-color: rgba(0, 0, 0, 0.8);
     transition: right 0.5s ease-in-out;
     z-index: 1000;
     padding-top: 60px;
@@ -36,12 +35,16 @@ hr {
     align-items: center;
     gap: 12px;
     padding: 10px 20px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
     position: relative;
     transition: color 0.4s;
+}
+
+.navbar-nav {
+    gap: 20px
 }
 
 .nav-link::after {
