@@ -1,5 +1,5 @@
 import Title from "../Title";
-import { BsCodeSquare, BsVectorPen ,BsGlobe, BsHeadset } from "react-icons/bs";
+import { BsCodeSquare, BsVectorPen ,BsGlobe } from "react-icons/bs";
 import "./style.css";
 
 function Services() {
@@ -39,7 +39,7 @@ function Services() {
                     </div>
                 </section>
 
-                <section className="service">
+                {/* <section className="service">
                     <div className="img-service">
                         <BsHeadset />
                     </div>
@@ -47,7 +47,7 @@ function Services() {
                         <h3>Suporte Técnico</h3>
                         <p>Oferecemos suporte técnico especializado para garantir o funcionamento contínuo e eficiente dos seus sistemas. Nossa equipe está disponível para resolver problemas técnicos, responder a dúvidas e fornecer orientações sobre melhores práticas, ajudando a manter seus processos funcionando sem interrupções.</p>
                     </div>
-                </section>
+                </section> */}
             </section>
         </section>
     )
