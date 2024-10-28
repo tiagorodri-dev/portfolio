@@ -23,7 +23,11 @@ function AboutMe() {
                         e criar soluções personalizadas que gerem valor. Se você busca um desenvolvedor dedicado e focado
                         em resultados, estou aqui para transformar sua ideia em realidade.
                     </span>
-                    <p>Interessado em colaborar ou trazer suas ideias para o mundo digital? <a href="#contato">Vamos conversar!</a></p>
+                    <p>Interessado em colaborar ou trazer suas ideias para o mundo digital?
+                        <a href="https://api.whatsapp.com/send?phone=5589994034021&text=Ol%C3%A1,%20Tiago!%20Gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank">
+                            Vamos conversar!
+                        </a>
+                    </p>
                 </div>
             </section>
         </section>
