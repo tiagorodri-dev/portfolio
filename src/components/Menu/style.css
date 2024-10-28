@@ -13,9 +13,9 @@
     z-index: 1001;
     border: none;
     outline: none;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    border-radius: 5px; /* Arredondar os cantos */
-    padding: 10px; /* Espaçamento interno */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .side-menu {
