@@ -4,7 +4,7 @@ import "./style.css";
 
 function AboutMe() {
     return (
-        <section className="section-sobre-mim">
+        <section className="section-sobre-mim" id="about-me">
             <Title name="Sobre mim" />
 
             <section className="sobre">

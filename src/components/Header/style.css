@@ -66,6 +66,34 @@ header {
     opacity: 0;
 }
 
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F80;
+    border: none;
+    color: #000;
+    animation: bounce 2s infinite ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+
+.arrow-down:focus {
+    outline: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
 @keyframes blink {
     0%, 100% {
       opacity: 1;

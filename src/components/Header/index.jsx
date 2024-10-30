@@ -2,11 +2,18 @@ import { useState, useEffect } from "react";
 import "./style.css";
 import ImageBackground from "../../assets/background-image.jpg";
 import Menu from "../Menu";
+import { BsChevronDown } from "react-icons/bs";
 
 function Header() {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
-  const roles = ["", "Desenvolvedor Web", "Analista de Sistemas", "Desenvolvedor Front-end", "Desenvolvedor Fullstack"];
+  const roles = [
+    "",
+    "Desenvolvedor Web",
+    "Analista de Sistemas",
+    "Desenvolvedor Front-end",
+    "Desenvolvedor Fullstack",
+  ];
 
   useEffect(() => {
     let typingTimeout;
@@ -51,6 +58,16 @@ function Header() {
       <div className="banner">
         <h1>{text}</h1>
         <p>Tiago Alves Rodrigues</p>
+        <button
+          className="arrow-down"
+          onClick={() =>
+            document
+              .getElementById("about-me")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          <BsChevronDown size={24} strokeWidth={2}/>
+        </button>
       </div>
     </header>
   );
