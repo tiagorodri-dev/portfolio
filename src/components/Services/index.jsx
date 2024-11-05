@@ -11,17 +11,17 @@ function Services() {
 
                 <section className="service">
                     <div className="img-service">
-                        <BsCodeSquare />
+                        <BsCodeSquare size={50} />
                     </div>
                     <div className="info-service">
-                        <h3>Desenvolvimento de software personalizado</h3>
+                        <h3>Software personalizados</h3>
                         <p>Desenvolvimento de sites, landing pages, sistemas web, webapps e aplicativos mobile. Ofereço soluções customizadas que atendem às necessidades específicas de cada projeto, utilizando tecnologias modernas para garantir desempenho e escalabilidade.</p>
                     </div>
                 </section>
 
                 <section className="service">
                     <div className="img-service">
-                        <BsVectorPen />
+                        <BsVectorPen size={50} />
                     </div>
                     <div className="info-service">
                         <h3>Prototipagem e Design</h3>
@@ -31,7 +31,7 @@ function Services() {
 
                 <section className="service">
                     <div className="img-service">
-                        <BsGlobe />
+                        <BsGlobe size={50} />
                     </div>
                     <div className="info-service">
                         <h3>Posicionamento digital</h3>

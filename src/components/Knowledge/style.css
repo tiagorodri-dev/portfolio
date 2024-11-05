@@ -4,6 +4,7 @@
     justify-content: space-around;
     min-height: 100vh;
     gap: 75px;
+    padding-bottom: 3em;
 }
 
 .knowledges {

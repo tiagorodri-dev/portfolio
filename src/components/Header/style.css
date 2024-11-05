@@ -3,6 +3,9 @@ header {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .img-wrapper {
@@ -62,23 +65,35 @@ header {
     color: #FFFFFF;
     font-size: 2rem;
     text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
-    animation: moveBanner 1s 0.9s forwards;
+    animation: moveBanner 1s 1s forwards;
+    opacity: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: 49%;
+    transform: translateX(-51%);
+    padding: 1rem;
+    animation: moveBanner 1s 1.1s forwards;
     opacity: 0;
 }
 
 .arrow-down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #F80;
+    background-color: transparent;
     border: none;
-    color: #000;
-    animation: bounce 2s infinite ease-in-out;
+    color: #F80;
+    animation: bounce 1.5s infinite ease-in-out;
     cursor: pointer;
     outline: none;
+}
+
+.arrow-down:hover {
+    opacity: 0.8;
+    transition: 0.4s ease-in-out
 }
 
 .arrow-down:focus {
@@ -86,11 +101,18 @@ header {
 }
 
 @keyframes bounce {
-    0%, 100% {
+    0% {
+        opacity: 0;
         transform: translateY(0);
     }
+    
     50% {
-        transform: translateY(20px);
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(30px);
     }
 }
 
@@ -110,6 +132,12 @@ header {
     100% {
         transform: translateY(0) rotateY(0);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .button-container {
+        left: 45%;
     }
 }
 

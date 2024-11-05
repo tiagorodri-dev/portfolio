@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BsList, BsX } from "react-icons/bs";
 import "./style.css";
 import Logo from '../../../public/favicon.ico';
@@ -39,7 +38,7 @@ function Menu() {
         isScrolled ? "navbar-scrolled" : ""
       }`}
     >
-      <div className="container d-flex justify-content-between align-items-center">
+      <div className="container container-nav d-flex justify-content-between align-items-center">
         <a className="navbar-brand mr-auto" href="/">
           <img src={Logo} alt="Logo" className="logo" />
         </a>

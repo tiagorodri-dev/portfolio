@@ -1,9 +1,10 @@
-import './style.css';
 import Header from '../Header';
+import AboutMe from '../AboutMe';
+import Services from '../Services';
 import Knowledge from '../Knowledge';
 import Projects from '../Projects';
-import Services from '../Services';
-import AboutMe from '../AboutMe';
+import Footer from '../Footer';
+import './style.css';
 
 function Container() {
     return (
@@ -13,8 +14,9 @@ function Container() {
             <Services/>
             <Knowledge/>
             <Projects/>
+            <Footer/>
         </div>
     )
 }
 
-export default Container
+export default Container;

@@ -3,60 +3,61 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #f2f2f2; /* Leve escurecimento no fundo */
-    padding: 50px 0;
+    background-color: #f2f2f2;
+    padding: 50px 0 100px 0;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    gap: 50px;
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch; /* Alinha os serviços para terem a mesma altura */
+    align-items: stretch;
     justify-content: center;
     gap: 30px;
     padding: 20px;
 }
 
-/* Estilo individual de cada serviço */
 .service {
-    width: 500px;
+    max-width: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 40px;
-    background-color: #ffffff; /* Fundo branco para os serviços */
+    background-color: #ffffff;
     border-radius: 14px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra um pouco mais intensa */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 250px;
 }
 
-/* Efeito ao passar o mouse */
 .service:hover {
-    transform: translateY(-5px); /* Elevação menor */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais acentuada ao passar o mouse */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo do ícone */
 .img-service {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #F80;
-    font-size: 4em;
 }
 
-/* Estilo da informação do serviço */
 .info-service {
-    color: #000000; /* Cor do texto ajustada para preto */
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    gap: 10px;
 }
 
 .info-service h3 {
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 
 .info-service p {
@@ -65,17 +66,12 @@
     text-align: justify;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .service {
         width: 100%;
         flex-direction: column;
         text-align: center;
-        min-height: auto; /* Remove a altura mínima para telas pequenas */
-    }
-
-    .img-service {
-        margin-bottom: 20px;
+        min-height: auto;
     }
 }
 
@@ -83,11 +79,11 @@
     .service {
         padding: 20px;
     }
-    
+
     .info-service h3 {
         font-size: 1.4em;
     }
-    
+
     .info-service p {
         font-size: 0.9em;
     }
