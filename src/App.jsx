@@ -11,14 +11,18 @@ function App() {
   useEffect(() => {
     AOS.init();
 
-    const handleLoad = () => {
-      setIsLoading(false);
+    const handleLoad = () => setIsLoading(false);
+
+    document.addEventListener("DOMContentLoaded", handleLoad);
+
+    const loadTimeout = setTimeout(() => setIsLoading(false), 5000);
+
+    return () => {
+      document.removeEventListener("DOMContentLoaded", handleLoad);
+      clearTimeout(loadTimeout);
     };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => window.removeEventListener("load", handleLoad);
   }, []);
+
 
   return (
     <div>
