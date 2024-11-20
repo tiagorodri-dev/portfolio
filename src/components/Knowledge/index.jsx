@@ -1,44 +1,95 @@
-import Title from "../Title"
-import "./style.css"
+import Title from "../Title";
+import "./style.css";
 
 function Knowledge() {
-    return (
-        <section className="session-knowledge">
-            <Title name="Conhecimentos"/>
+  const technologies = [
+    {
+      id: 1,
+      name: "Typescript",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    },
 
-            <div className="knowledges">
-                <div className="knowledge">
-                    <img className="image-knowledge" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                    <h3 className="text-knowledge">Typescript</h3>
-                </div>
+    {
+      id: 2,
+      name: "React",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    },
 
-                <div className="knowledge">
-                    <img className="image-knowledge" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                    <h3 className="text-knowledge">React</h3>
-                </div>
+    {
+      id: 3,
+      name: "NodeJS",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+    },
 
-                <div className="knowledge">
-                    <img className="image-knowledge" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
-                    <h3 className="text-knowledge">Node.JS</h3>
-                </div>
+    {
+      id: 4,
+      name: "ExpressJS",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
+    },
 
-                <div className="knowledge">
-                    <img className="image-knowledge" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                    <h3 className="text-knowledge">ExpressJS</h3>
-                </div>
+    {
+      id: 5,
+      name: "PHP",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+    },
 
-                <div className="knowledge">
-                    <img className="image-knowledge" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                    <h3 className="text-knowledge">PHP</h3>
-                </div>
+    {
+      id: 6,
+      name: "Git",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    },
 
-                <div className="knowledge">
-                    <img className="image-knowledge" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                    <h3 className="text-knowledge">Git</h3>
-                </div>
-            </div>
-        </section>
-    )
+    {
+      id: 7,
+      name: "HTML",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    },
+
+    {
+      id: 8,
+      name: "CSS",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    },
+
+    {
+      id: 9,
+      name: "Bootstrap",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    },
+
+    {
+      id: 10,
+      name: "Javascript",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    },
+
+    {
+      id: 11,
+      name: "Docker",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    },
+
+    {
+      id: 12,
+      name: "PostgreSQL",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    },
+  ];
+
+  return (
+    <section className="session-knowledge">
+      <Title name="Tecnologias" />
+
+      <div className="knowledges">
+        {technologies.map((stack) => (
+          <div className="knowledge" key={stack.id}>
+            <img className="image-knowledge" src={stack.image} alt={stack.name} />
+            <h3 className="text-knowledge">{stack.name}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
-export default Knowledge
+export default Knowledge;
