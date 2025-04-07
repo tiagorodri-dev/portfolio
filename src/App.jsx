@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Container from "./components/Container";
-import "./styles/GlobalStyle.css";
+import Spinner from "react-bootstrap/Spinner";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import "./styles/GlobalStyle.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,30 +13,26 @@ function App() {
     AOS.init();
 
     const handleLoad = () => setIsLoading(false);
-
     document.addEventListener("DOMContentLoaded", handleLoad);
-
-    const loadTimeout = setTimeout(() => setIsLoading(false), 5000);
+    const loadTimeout = setTimeout(() => setIsLoading(false), 3000);
 
     return () => {
       document.removeEventListener("DOMContentLoaded", handleLoad);
       clearTimeout(loadTimeout);
     };
+
   }, []);
 
-
   return (
-    <div>
+    <>
       {isLoading ? (
         <div className="d-flex justify-content-center align-items-center vh-100">
-          <div className="spinner-border text-primary" role="status">
-            <span className="visually-hidden">Carregando...</span>
-          </div>
+          <Spinner animation="border" />
         </div>
       ) : (
         <Container />
       )}
-    </div>
+    </>
   );
 }
 

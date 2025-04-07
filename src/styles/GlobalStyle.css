@@ -4,9 +4,3 @@
     box-sizing: border-box;
     font-family: 'Mulish';
 }
-
-.spinner-border {
-    width: 4rem;
-    height: 4rem;
-    border-width: 0.45rem;
-}

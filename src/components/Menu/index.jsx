@@ -60,13 +60,13 @@ function Menu() {
         >
           <ul className={`navbar-nav ${isOpen ? 'ml-auto' : 'ms-auto'}`}>
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <a className="nav-link" href="#">Início</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Serviços</a>
+              <a className="nav-link" href="#">Especialidades</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Conhecimentos</a>
+              <a className="nav-link" href="#">Sobre</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Projetos</a>

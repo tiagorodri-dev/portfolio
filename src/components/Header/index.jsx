@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import "./style.css";
-import ImageBackground from "../../assets/background-image.webp";
+import capa from "../../assets/capa.jpg";
 import Menu from "../Menu";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import "./style.css";
+import ParticleBackground from "../ParticleBackground/ParticleBackground";
 
 function Header() {
   const [text, setText] = useState("");
@@ -17,7 +18,8 @@ function Header() {
 
   const smoothScrollTo = (target, duration) => {
     const targetElement = document.getElementById(target);
-    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+    const targetPosition =
+      targetElement.getBoundingClientRect().top + window.scrollY;
     const startPosition = window.scrollY;
     const distance = targetPosition - startPosition;
     let startTime = null;
@@ -70,22 +72,35 @@ function Header() {
   }, [index]);
 
   return (
-    <header>
+    <header className="header-bg">
+      <ParticleBackground/>
       <Menu />
-      <div className="img-wrapper">
-        <img src={ImageBackground} alt="imagem de fundo" />
+
+      <div className="banner container">
+        <div className="banner-content">
+          <p>
+            Eu sou <span className="destaque">Tiago Alves Rodrigues</span> e
+            atuo como
+          </p>
+          <h1>{text}</h1>
+          <p className="descricao">
+            Desenvolvendo soluções inovadoras e criando experiências marcantes
+            para os usuários
+          </p>
+        </div>
+
+        <div className="banner-img">
+          <img src={capa} alt="Tiago" />
+        </div>
       </div>
-      <div className="banner">
-        <h1>{text}</h1>
-        <p>Tiago Alves Rodrigues</p>
-      </div>
+
       <div className="button-container">
         <button
-            className="arrow-down"
-            onClick={() => smoothScrollTo("about-me", 800)}
-          >
-            <BsChevronDoubleDown size={30} strokeWidth={1} title="Veja mais"/>
-          </button>
+          className="arrow-down"
+          onClick={() => smoothScrollTo("about-me", 800)}
+        >
+          <BsChevronDoubleDown size={30} strokeWidth={1} title="Veja mais" />
+        </button>
       </div>
     </header>
   );
