@@ -1,8 +1,8 @@
 import Header from "../Header";
-import AboutMe from "../AboutMe";
-import Services from "../Services";
-import Knowledge from "../Knowledge";
-import Projects from "../Projects";
+import AboutMe from "../../sections/AboutMe";
+import Services from "../../sections/Services";
+import Knowledge from "../../sections/Knowledge";
+import Projects from "../../sections/Projects";
 import Footer from "../Footer";
 import "./style.css";
 

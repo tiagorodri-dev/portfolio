@@ -1,4 +1,4 @@
-import Title from "../Title";
+import Title from "../../ui/Title";
 import { BsCodeSquare, BsVectorPen, BsGlobe } from "react-icons/bs";
 import "./style.css";
 

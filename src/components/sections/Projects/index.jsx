@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Title from "../Title";
+import Title from "../../ui/Title";
 import "./style.css";
 import { useGitHubAutomatedRepos, StackIcons } from "github-automated-repos";
 

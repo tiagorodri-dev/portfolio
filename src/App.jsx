@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Container from "./components/Container";
+import Container from "./components/layout/Container";
 import Spinner from "react-bootstrap/Spinner";
 import AOS from "aos";
 import "aos/dist/aos.css";

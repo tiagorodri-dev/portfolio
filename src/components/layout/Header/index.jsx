@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import capa from "../../assets/capa.jpg";
-import Menu from "../Menu";
-import { BsChevronDoubleDown } from "react-icons/bs";
+import capa from "../../../assets/capa.jpg";
+import Menu from "../Navbar";
+import ParticleBackground from "../../shared/ParticleBackground/ParticleBackground";
 import "./style.css";
-import ParticleBackground from "../ParticleBackground/ParticleBackground";
+import ArrowButton from "../../ui/ArrowDownButton";
 
 function Header() {
   const [text, setText] = useState("");
@@ -15,31 +15,6 @@ function Header() {
     "Desenvolvedor Front-end",
     "Desenvolvedor Fullstack",
   ];
-
-  const smoothScrollTo = (target, duration) => {
-    const targetElement = document.getElementById(target);
-    const targetPosition =
-      targetElement.getBoundingClientRect().top + window.scrollY;
-    const startPosition = window.scrollY;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
-
-    const animation = (currentTime) => {
-      if (startTime === null) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const progress = Math.min(timeElapsed / duration, 1);
-      const ease = easeInOutQuad(progress);
-      window.scrollTo(0, startPosition + distance * ease);
-
-      if (progress < 1) requestAnimationFrame(animation);
-    };
-
-    const easeInOutQuad = (t) => {
-      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-    };
-
-    requestAnimationFrame(animation);
-  };
 
   useEffect(() => {
     let typingTimeout;
@@ -73,7 +48,7 @@ function Header() {
 
   return (
     <header className="header-bg" id="inicio">
-      <ParticleBackground/>
+      <ParticleBackground />
       <Menu />
 
       <div className="banner container">
@@ -94,14 +69,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="button-container">
-        <button
-          className="arrow-down"
-          onClick={() => smoothScrollTo("about-me", 800)}
-        >
-          <BsChevronDoubleDown size={30} strokeWidth={1} title="Veja mais" />
-        </button>
-      </div>
+      <ArrowButton />
     </header>
   );
 }

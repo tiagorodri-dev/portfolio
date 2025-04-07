@@ -1,5 +1,5 @@
-import Title from "../Title";
-import imageAboutMe from "../../assets/img_formatura.jpg";
+import Title from "../../ui/Title";
+import imageAboutMe from "../../../assets/img_formatura.jpg";
 import "./style.css";
 
 function AboutMe() {
