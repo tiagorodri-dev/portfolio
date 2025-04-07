@@ -72,7 +72,7 @@ function Header() {
   }, [index]);
 
   return (
-    <header className="header-bg">
+    <header className="header-bg" id="inicio">
       <ParticleBackground/>
       <Menu />
 

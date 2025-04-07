@@ -12,7 +12,7 @@ function Projects() {
   };
 
   return (
-    <section className="session-projects">
+    <section className="session-projects" id="projetos">
       <Title name="Projetos" />
 
       <div className="projects">

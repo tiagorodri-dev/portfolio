@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
+import scrollToSection from "../../utils/scrollToSection";
 import { BsList, BsX } from "react-icons/bs";
-import "./style.css";
 import Logo from '../../../public/favicon.ico';
+import "./style.css";
 
 function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,16 +61,16 @@ function Menu() {
         >
           <ul className={`navbar-nav ${isOpen ? 'ml-auto' : 'ms-auto'}`}>
             <li className="nav-item">
-              <a className="nav-link" href="#">Início</a>
+              <a className="nav-link" href="#inicio" onClick={(e) => scrollToSection(e, 'inicio')}>Início</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Especialidades</a>
+              <a className="nav-link" href="#especialidades" onClick={(e) => scrollToSection(e, 'especialidades')}>Especialidades</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Sobre</a>
+              <a className="nav-link" href="#sobre" onClick={(e) => scrollToSection(e, 'sobre')}>Sobre</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Projetos</a>
+              <a className="nav-link" href="#projetos" onClick={(e) => scrollToSection(e, 'projetos')}>Projetos</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Contato</a>
