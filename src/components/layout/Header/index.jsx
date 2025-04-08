@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import capa from "../../../assets/capa.jpg";
+import capa from "../../../assets/capa.webp";
 import Menu from "../Navbar";
+import ArrowButton from "../../ui/ArrowDownButton";
 import ParticleBackground from "../../shared/ParticleBackground/ParticleBackground";
 import "./style.css";
-import ArrowButton from "../../ui/ArrowDownButton";
 
 function Header() {
   const [text, setText] = useState("");
@@ -65,7 +65,7 @@ function Header() {
         </div>
 
         <div className="banner-img">
-          <img src={capa} alt="Tiago" />
+          <img src={capa} alt="Tiago" loading="lazy" />
         </div>
       </div>
 
