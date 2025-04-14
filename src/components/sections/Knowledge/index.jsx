@@ -100,7 +100,7 @@ function Knowledge() {
               src={stack.image}
               alt={stack.name}
             />
-            <h3 className="text-knowledge">{stack.name}</h3>
+            <h4 className="text-knowledge">{stack.name}</h4>
           </div>
         ))}
       </div>

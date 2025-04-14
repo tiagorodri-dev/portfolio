@@ -100,6 +100,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white me-3"
+                aria-label="Link para acessar meu Github"
               >
                 <BsGithub />
               </a>
@@ -108,6 +109,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white me-3"
+                aria-label="Link para acessar meu perfil no LinkedIn"
               >
                 <BsLinkedin />
               </a>
@@ -116,6 +118,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
+                aria-label="Link para acessar falar no Whatsapp"
               >
                 <BsWhatsapp />
               </a>
