@@ -1,5 +1,8 @@
 import Title from "../../ui/Title";
-import imageAboutMe from "../../../assets/img_formatura.jpg";
+import imagemAboutMe from "../../../assets/img_formatura.jpg";
+import imagemEvento from "../../../assets/evento_cais_tech.webp";
+import imagemUnifor from "../../../assets/visita_tecnica_unifor.webp";
+import imagemMinicurso from "../../../assets/minicurso-reactjs.webp";
 import "./style.css";
 
 function AboutMe() {
@@ -8,39 +11,68 @@ function AboutMe() {
       <Title name="Sobre mim" />
 
       <section className="sobre">
-        <div>
-          <img
-            src={imageAboutMe}
-            className="imageAboutMe"
-            alt="Imagem da minha formatura"
-          />
-        </div>
 
         <div className="sobre-mim">
-          <span>
-            Desenvolvedor de Software com mais de 2 anos de experiência e
-            graduado em Análise e Desenvolvimento de Sistemas. Tenho experiência
-            em desenvolver soluções inovadoras nas áreas de Telecomunicações e
-            Propriedade Intelectual, sempre com foco em otimizar processos e
-            garantir alta performance.
-          </span>
-          <span>
-            Acredito na importância de uma comunicação clara e colaborativa com
-            clientes para entender suas necessidades e criar soluções
-            personalizadas que gerem valor. Se você busca um desenvolvedor
-            dedicado e focado em resultados, estou aqui para transformar sua
-            ideia em realidade.
-          </span>
           <p>
-            Interessado em colaborar ou trazer suas ideias para o mundo digital?
-            <a
-              href="https://api.whatsapp.com/send?phone=5589994034021&text=Ol%C3%A1,%20Tiago!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
-              target="_blank"
-            >
-              Vamos conversar!
-            </a>
+            Apaixonado por tecnologia desde muito cedo, iniciei minha trajetória
+            na programação em 2018 na faculdade de Análise e Desenvolvimento de Sistemas.
+            De lá para cá, venho buscando me desenvolver profissionalmente, participando de
+            cursos, minicursos, eventos, workshops, etc. Acumulando experiências profissionais no desenvolvimento
+            de sistemas para a área de Telecomunicações e Propriedade Intelectual.
+          </p>
+          <p>
+            Desenvolvedor de Software com mais de 2 anos de experiência e graduado em Análise e Desenvolvimento
+            de Sistemas. Tenho experiência em desenvolver soluções inovadoras nas áreas de Telecomunicações e
+            Propriedade Intelectual, sempre com foco em otimizar processos e garantir alta performance.
+          </p>
+          <p>
+            Acredito na importância de uma comunicação clara e colaborativa com clientes para entender suas
+            necessidades e criar soluções personalizadas que gerem valor. Se você busca um desenvolvedor
+            dedicado e focado em resultados, estou aqui para transformar sua ideia em realidade.
           </p>
         </div>
+
+        <div id="carousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div className="carousel-inner">
+
+            <div className="carousel-item active">
+              <div className="carousel-image-wrapper">
+                <img className="image-carousel" src={imagemAboutMe} alt="Formatura do curso de Análise e Desenvolvimento de Sistemas" />
+                <span className="description-image">Formatura do curso de Análise e Desenvolvimento de Sistemas (2024)</span>
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="carousel-image-wrapper">
+                <img className="image-carousel" src={imagemEvento} alt="Professor Eric Splanger da Lewis University de Illinois, Chicago - EUA no Cais Tech" />
+                <span className="description-image">Professor Eric Splanger da Lewis University de Illinois, Chicago - EUA (2018)</span>
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="carousel-image-wrapper">
+                <img className="image-carousel" src={imagemUnifor} alt="Visita técnica ao Parque Tecnológico da UNIFOR" />
+                <span className="description-image">Visita técnica ao Parque Tecnológico da UNIFOR (2018)</span>
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="carousel-image-wrapper">
+                <img className="image-carousel" src={imagemMinicurso} alt="Minicurso de React.js no InovaIFPI" />
+                <span className="description-image">Minicurso de React.js no InovaIFPI (2024)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-label="Slide anterior">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-label="Próximo slide">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+
       </section>
     </section>
   );
