@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import scrollToSection from "../../../utils/scrollToSection";
 import { BsList, BsX } from "react-icons/bs";
-import Logo from "../../../../public/favicon.ico";
+import Logo from "/favicon.ico";
 import "./style.css";
 
 function Menu() {

@@ -1,7 +1,7 @@
 import Title from "../../ui/Title";
 import "./style.css";
 
-function Knowledge() {
+function Technologies() {
   const technologies = [
     {
       id: 1,
@@ -26,65 +26,44 @@ function Knowledge() {
 
     {
       id: 4,
-      name: "ExpressJS",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
-    },
-
-    {
-      id: 5,
-      name: "PHP",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-    },
-
-    {
-      id: 6,
       name: "Git",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     },
 
     {
-      id: 7,
+      id: 5,
       name: "HTML",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
     },
 
     {
-      id: 8,
+      id: 6,
       name: "CSS",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
     },
 
     {
-      id: 9,
+      id: 7,
       name: "Bootstrap",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
     },
 
     {
-      id: 10,
+      id: 8,
       name: "Javascript",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
 
     {
-      id: 11,
-      name: "Docker",
+      id: 9,
+      name: "Firebase",
       image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-    },
-
-    {
-      id: 12,
-      name: "PostgreSQL",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     },
   ];
 
@@ -108,4 +87,4 @@ function Knowledge() {
   );
 }
 
-export default Knowledge;
+export default Technologies;
