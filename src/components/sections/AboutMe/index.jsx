@@ -1,5 +1,6 @@
 import Title from "../../ui/Title";
-import imagemAboutMe from "../../../assets/img_formatura.jpg";
+import imagemAboutMe from "../../../assets/formatura.webp";
+import imagemAboutMe2 from "../../../assets/formatura(1).webp"
 import imagemEvento from "../../../assets/evento_cais_tech.webp";
 import imagemUnifor from "../../../assets/visita_tecnica_unifor.webp";
 import imagemMinicurso from "../../../assets/minicurso-reactjs.webp";
@@ -13,22 +14,26 @@ function AboutMe() {
       <section className="sobre">
 
         <div className="sobre-mim">
+          <h5 className="fw-bold fs-4 mb-3">
+            Tiago Alves Rodrigues,
+            <span>Analista de Sistemas & Desenvolvedor Front-end</span>
+          </h5>
+          <p>
+            Sou um profissional de TI, graduado em Análise e Desenvolvimento de Sistemas e
+            atuante como Desenvolvedor de Software com foco em front-end,
+            com mais de 2 anos de experiência no desenvolvimento de sistemas e soluções inovadoras
+            nas áreas de Telecomunicações e Propriedade Intelectual, sempre com foco em otimizar processos
+            e garantir alta performance.
+          </p>
           <p>
             Apaixonado por tecnologia desde muito cedo, iniciei minha trajetória
             na programação em 2018 na faculdade de Análise e Desenvolvimento de Sistemas.
-            De lá para cá, venho buscando me desenvolver profissionalmente, participando de
-            cursos, minicursos, eventos, workshops, etc. Acumulando experiências profissionais no desenvolvimento
-            de sistemas para a área de Telecomunicações e Propriedade Intelectual.
-          </p>
-          <p>
-            Desenvolvedor de Software com mais de 2 anos de experiência e graduado em Análise e Desenvolvimento
-            de Sistemas. Tenho experiência em desenvolver soluções inovadoras nas áreas de Telecomunicações e
-            Propriedade Intelectual, sempre com foco em otimizar processos e garantir alta performance.
+            De lá para cá, venho buscando continuamente a me desenvolver dia após dia, participando de
+            cursos, minicursos, eventos, workshops, etc e vivendo como um eterno aprendiz.
           </p>
           <p>
             Acredito na importância de uma comunicação clara e colaborativa com clientes para entender suas
-            necessidades e criar soluções personalizadas que gerem valor. Se você busca um desenvolvedor
-            dedicado e focado em resultados, estou aqui para transformar sua ideia em realidade.
+            necessidades e criar soluções personalizadas que gerem valor.
           </p>
         </div>
 
@@ -42,10 +47,17 @@ function AboutMe() {
               </div>
             </div>
 
+            <div className="carousel-item active">
+              <div className="carousel-image-wrapper">
+                <img className="image-carousel" src={imagemAboutMe2} alt="Formatura do curso de Análise e Desenvolvimento de Sistemas" />
+                <span className="description-image">Formatura do curso de Análise e Desenvolvimento de Sistemas (2024)</span>
+              </div>
+            </div>
+
             <div className="carousel-item">
               <div className="carousel-image-wrapper">
                 <img className="image-carousel" src={imagemEvento} alt="Professor Eric Splanger da Lewis University de Illinois, Chicago - EUA no Cais Tech" />
-                <span className="description-image">Professor Eric Splanger da Lewis University de Illinois, Chicago - EUA (2018)</span>
+                <span className="description-image">Professor Eric Splanger da Lewis University de Illinois - EUA (2018)</span>
               </div>
             </div>
 
