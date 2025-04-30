@@ -1,8 +1,8 @@
 import Header from "../Header";
 import AboutMe from "../../sections/AboutMe";
 import Services from "../../sections/Services";
-import Technologies from "../../sections/Technologies";
-import Projects from "../../sections/Projects";
+// import Technologies from "../../sections/Technologies";
+// import Projects from "../../sections/Projects";
 import Footer from "../Footer";
 import "./style.css";
 
@@ -12,8 +12,8 @@ function Container() {
       <Header />
       <Services />
       <AboutMe />
-      <Technologies />
-      <Projects />
+      {/* <Projects />
+      <Technologies /> */}
       <Footer />
     </div>
   );
