@@ -1,4 +1,4 @@
-import Title from "../../ui/Title";
+import Text from "../../ui/Title";
 import imagemAboutMe from "../../../assets/formatura.webp";
 import imagemAboutMe2 from "../../../assets/formatura(1).webp"
 import imagemEvento from "../../../assets/evento_cais_tech.webp";
@@ -9,9 +9,9 @@ import "./style.css";
 function AboutMe() {
   return (
     <section className="section-sobre-mim" id="sobre">
-      <Title name="Sobre mim" />
+      <Text title="Sobre mim" />
 
-      <section className="sobre">
+      <section className="container sobre">
 
         <div className="sobre-mim">
           <h5 className="fw-bold fs-4 mb-3">

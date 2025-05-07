@@ -1,11 +1,11 @@
-import Title from "../../ui/Title";
+import Text from "../../ui/Title";
 import "./style.css";
 
 function Projects() {
 
   return (
     <section className="session-projects" id="projetos">
-      <Title name="Principais Projetos" />
+      <Text title="Principais Projetos" subtitle="Confira os principais projetos já desenvolvidos" />
 
       <div className="projects">
 

@@ -1,5 +1,5 @@
 import AnimatedSection from "../../ui/AnimatedSection";
-import Title from "../../ui/Title";
+import Text from "../../ui/Title";
 import "./style.css";
 
 function Technologies() {
@@ -73,7 +73,7 @@ function Technologies() {
     <section className="session-technology">
       <div className="technologies-wrapper">
         <AnimatedSection>
-          <Title name="Tecnologias e Ferramentas" />
+          <Text title="Tecnologias e Ferramentas" subtitle="As principais tecnologias utilizadas" />
 
           <div className="technologies">
             {technologies.concat(technologies).map((stack) => (

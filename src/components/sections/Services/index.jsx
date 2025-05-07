@@ -1,13 +1,13 @@
-import Title from "../../ui/Title";
-import { BsCodeSquare, BsHeadset, BsClipboardData } from "react-icons/bs";
+import Text from "../../ui/Title";
+import { BsCodeSquare, BsHeadset, BsClipboardData,  } from "react-icons/bs";
 import "./style.css";
 
 function Services() {
   return (
     <section className="session-services" id="especialidades">
-      <Title name="Minhas Especialidades" />
+      <Text title="Minhas Especialidades" />
 
-      <section className="services">
+      <section className="container services">
         <section className="service">
           <div className="img-service">
             <BsClipboardData size={50} />
@@ -15,11 +15,9 @@ function Services() {
           <div className="info-service">
             <h3>Análise de Requisitos</h3>
             <p>
-              Possuo habilidades de compreensão e interpretação das necessidades
-              do usuário com base nas regras de negócio, facilitando o processo
-              de levantamento e análise de requisitos. Além disso, tenho
-              proficiência em traduzir essas necessidades em soluções visuais
-              por meio da criação de protótipos no Figma.
+              Possuo habilidades de compreensão e interpretação das necessidades do usuário,
+              facilitando o processo de
+              análise e levantamento de requisitos. Traduzindo essas necessidades em diagramas e protótipos visuais.
             </p>
           </div>
         </section>
@@ -29,12 +27,10 @@ function Services() {
             <BsCodeSquare size={50} />
           </div>
           <div className="info-service">
-            <h3>Desenvolvimento de Software</h3>
+            <h3>Desenvolvimento e Inovação</h3>
             <p>
-              Desenvolvimento de sites, landing pages, sistemas web, webapps e
-              aplicativos mobile. Ofereço soluções customizadas que atendem às
-              necessidades específicas de cada projeto, utilizando tecnologias
-              modernas para garantir desempenho e escalabilidade.
+              Atuo ativamente no desenvolvimento e manutenção de sites, sistemas web e webapps, visando sempre
+              inovar e implementar as práticas e tecnologias mais atuais do mercado.
             </p>
           </div>
         </section>
@@ -44,15 +40,26 @@ function Services() {
             <BsHeadset size={50} />
           </div>
           <div className="info-service">
-            <h3>Suporte Técnico</h3>
+            <h3>Suporte especializado</h3>
             <p>
-              Ofereço suporte técnico especializado para garantir o
-              funcionamento contínuo e eficiente dos seus sistemas. Nossa equipe
-              está disponível para resolver problemas técnicos, responder a
-              dúvidas e fornecer orientações sobre melhores práticas.
+              Forneço suporte técnico eficaz no uso de ERPs, sistemas operacionais, de escritórios e entre outros.
+              Conduzindo o usuário ao entendimento claro e proporcionando-lhe uma experiência única e agradável.
             </p>
           </div>
         </section>
+
+        {/* <section className="service">
+          <div className="img-service">
+            <BsGearWideConnected size={50} />
+          </div>
+          <div className="info-service">
+            <h3>Melhoria de processos</h3>
+            <p>
+              Com um olhar atento a melhoria de processos, costumo identificar lacunas e propor soluções que otimizam o fluxo de trabalho, aumentando a eficiência e reduzindo custos.
+              Alianhando tecnologia, processos e inovação
+            </p>
+          </div>
+        </section> */}
       </section>
     </section>
   );

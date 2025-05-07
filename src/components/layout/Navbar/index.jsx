@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import scrollToSection from "../../../utils/scrollToSection";
 import { BsList, BsX } from "react-icons/bs";
-import Logo from "/favicon.ico";
+import Logo from "../../../assets/logo.png";
 import "./style.css";
 
 function Menu() {
@@ -76,19 +76,19 @@ function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#especialidades"
-                onClick={(e) => scrollToSection(e, "especialidades")}
+                href="#sobre"
+                onClick={(e) => scrollToSection(e, "sobre")}
               >
-                Especialidades
+                Sobre
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#sobre"
-                onClick={(e) => scrollToSection(e, "sobre")}
+                href="#especialidades"
+                onClick={(e) => scrollToSection(e, "especialidades")}
               >
-                Sobre
+                Especialidades
               </a>
             </li>
             <li className="nav-item">

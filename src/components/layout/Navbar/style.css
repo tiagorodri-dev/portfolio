@@ -5,8 +5,14 @@
   transition: background-color 0.3s ease;
 }
 
+.navbar {
+  height: 80px;
+}
+
 .logo {
-  max-height: 40px;
+  max-height: 70px;
+  height: 100%;
+  object-fit: contain;
 }
 
 .navbar-toggler {
@@ -48,6 +54,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    height: 60px;
+  }
+
   .navbar-collapse {
     position: fixed;
     top: 0;
