@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import "./style.css";
 
-function Title({ name }) {
-  const words = name.split(" ");
+function Text({ title, subtitle }) {
+  const words = title.split(" ");
   const firstWord = words[0];
   const secondWord = words.slice(1).join(" ");
 
@@ -12,12 +12,14 @@ function Title({ name }) {
         <span className="first-word">{firstWord}</span>{" "}
         <span className="second-word">{secondWord}</span>
       </h1>
+      {subtitle && <h4 className="subtitle">{subtitle}</h4>}
     </div>
   );
 }
 
-Title.propTypes = {
-  name: PropTypes.string,
+Text.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
 };
 
-export default Title;
+export default Text;

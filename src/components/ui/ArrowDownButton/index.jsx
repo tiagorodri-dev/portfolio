@@ -31,7 +31,7 @@ function ArrowButton() {
     <div className="button-container">
       <button
         className="arrow-down"
-        onClick={() => smoothScrollTo("especialidades", 800)}
+        onClick={() => smoothScrollTo("sobre", 800)}
       >
         <BsChevronDoubleDown size={30} strokeWidth={1} title="Veja mais" />
       </button>
