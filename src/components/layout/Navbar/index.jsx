@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import scrollToSection from "../../../utils/scrollToSection";
 import { BsList, BsX } from "react-icons/bs";
-import Logo from "../../../assets/logo.png";
+import Logo from "../../../assets/logo.webp";
 import "./style.css";
 
 function Menu() {
