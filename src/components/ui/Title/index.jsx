@@ -12,7 +12,7 @@ function Text({ title, subtitle }) {
         <span className="first-word">{firstWord}</span>{" "}
         <span className="second-word">{secondWord}</span>
       </h1>
-      {subtitle && <h4 className="subtitle">{subtitle}</h4>}
+      {subtitle && <h5 className="subtitle">{subtitle}</h5>}
     </div>
   );
 }

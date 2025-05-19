@@ -2,11 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* min-height: 100vh; */
     background-color: #000000;
-    padding: 3em;
+    padding: 3em 3em 0 3em;
 }
 
 .projects {
     margin-top: 2em;
+}
+
+.card-img-top {
+    border-radius: 10px;
 }

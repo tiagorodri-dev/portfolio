@@ -36,14 +36,14 @@ function Projects() {
 
   return (
     <section className="session-projects" id="projetos">
-      <Text title="Principais Projetos" subtitle="Confira os principais projetos já desenvolvidos" />
+      <Text title="Principais Projetos" subtitle="Confira as principais soluções já desenvolvidas e as tecnologias que utilizo no dia a dia" />
 
         <div className="container projects">
           <div className="row gy-4">
             {projects.map((project) => (
-              <div key={project.id} className="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3">
+              <div key={project.id} className="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3 py-4">
                 <div>
-                  <img src={project.image} className="card-img-top" alt={project.alt} style={{borderRadius: "10px"}} />
+                  <img src={project.image} className="card-img-top" alt={project.alt} />
                 </div>
                 <div>
                   <h6 className="card-title text-white fs-5 fw-bold">{project.title}</h6>
