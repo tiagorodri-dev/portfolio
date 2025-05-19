@@ -8,13 +8,5 @@
 }
 
 .projects {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
     margin-top: 2em;
-    padding: 40px;
 }
