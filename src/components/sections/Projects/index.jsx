@@ -2,7 +2,9 @@ import Text from "../../ui/Title";
 import websiteOrcaDiversoes from "../../../assets/website_orca_diversoes.webp";
 import sistemaMercadinhoRodrigues from "../../../assets/sistema_mercadinho_rodrigues.webp";
 import websiteSalaoDoIrlando from "../../../assets/website_salao_do_irlando.webp";
+import Technologies from "./Technologies";
 import "./style.css";
+import AnimatedSection from "../../ui/AnimatedSection";
 
 function Projects() {
 
@@ -36,7 +38,8 @@ function Projects() {
 
   return (
     <section className="session-projects" id="projetos">
-      <Text title="Principais Projetos" subtitle="Confira as principais soluções já desenvolvidas e as tecnologias que utilizo no dia a dia" />
+      <AnimatedSection>
+        <Text title="Principais Projetos" subtitle="Confira as principais soluções já desenvolvidas e as tecnologias que utilizo no dia a dia" />
 
         <div className="container projects">
           <div className="row gy-4">
@@ -52,8 +55,11 @@ function Projects() {
               </div>
             ))}
           </div>
+
+          <Technologies />
         </div>
 
+      </AnimatedSection>
     </section>
   );
 }

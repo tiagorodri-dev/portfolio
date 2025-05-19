@@ -1,4 +1,3 @@
-import AnimatedSection from "../../ui/AnimatedSection";
 import "./style.css";
 
 function Technologies() {
@@ -26,7 +25,8 @@ function Technologies() {
 
     {
       id: 4,
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
       name: "Vite",
     },
 
@@ -74,7 +74,8 @@ function Technologies() {
 
     {
       id: 11,
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
       name: "Figma",
     },
   ];
@@ -82,8 +83,6 @@ function Technologies() {
   return (
     <section className="session-technology">
       <div className="technologies-wrapper">
-        <AnimatedSection>
-
           <div className="technologies">
             {technologies.concat(technologies).map((stack) => (
               <div className="technology" key={stack.id}>
@@ -96,7 +95,6 @@ function Technologies() {
               </div>
             ))}
           </div>
-        </AnimatedSection>
       </div>
     </section>
   );

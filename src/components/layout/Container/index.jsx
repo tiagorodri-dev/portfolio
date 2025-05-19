@@ -1,7 +1,6 @@
 import Header from "../Header";
 import AboutMe from "../../sections/AboutMe";
 import Services from "../../sections/Services";
-import Technologies from "../../sections/Technologies";
 import Projects from "../../sections/Projects";
 import Footer from "../Footer";
 import "./style.css";
@@ -13,7 +12,6 @@ function Container() {
       <AboutMe />
       <Services />
       <Projects />
-      <Technologies />
       <Footer />
     </div>
   );
