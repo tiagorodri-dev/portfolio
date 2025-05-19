@@ -1,6 +1,7 @@
 import Text from "../../ui/Title";
 import websiteOrcaDiversoes from "../../../assets/website_orca_diversoes.webp";
 import sistemaMercadinhoRodrigues from "../../../assets/sistema_mercadinho_rodrigues.webp";
+import websiteSalaoDoIrlando from "../../../assets/website_salao_do_irlando.webp";
 import "./style.css";
 
 function Projects() {
@@ -11,7 +12,7 @@ function Projects() {
       image: sistemaMercadinhoRodrigues,
       alt: "Imagem do projeto Sistema Mercadinho Rodrigues",
       title: "Mercadinho Rodrigues",
-      category: "Sistema Desktop",
+      category: "Sistema web responsivo",
     },
 
     {
@@ -21,6 +22,14 @@ function Projects() {
       title: "Orca Diversões",
       category: "Website responsivo",
     },
+
+    {
+      id: "3",
+      image: websiteSalaoDoIrlando,
+      alt: "Imagem do projeto Salão do Irlando",
+      title: "Salão do Irlando",
+      category: "Website responsivo",
+    }
   ]
 
   console.log(projects);
@@ -32,7 +41,7 @@ function Projects() {
         <div className="container projects">
           <div className="row gy-4">
             {projects.map((project) => (
-              <div key={project.id} className="col-md-6 col-lg-6 d-flex flex-column gap-3">
+              <div key={project.id} className="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3">
                 <div>
                   <img src={project.image} className="card-img-top" alt={project.alt} style={{borderRadius: "10px"}} />
                 </div>

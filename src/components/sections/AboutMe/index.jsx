@@ -23,7 +23,7 @@ function AboutMe() {
             atuante como Desenvolvedor de Software com foco em front-end,
             com mais de 2 anos de experiência no desenvolvimento de sistemas e soluções inovadoras
             nas áreas de Telecomunicações e Propriedade Intelectual, sempre com foco em otimizar processos
-            e garantir alta performance.
+            através do desenvolvimento de soluções inovadoras.
           </p>
           <p>
             Apaixonado por tecnologia desde muito cedo, iniciei minha trajetória
