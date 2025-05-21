@@ -28,7 +28,7 @@ function Header() {
         </div>
 
         <div className="banner-img">
-          <img src={capa} alt="Tiago" loading="lazy" width={350} />
+          <img src={capa} alt="Tiago" loading="lazy" width={350} height={330}/>
         </div>
       </div>
     </header>
