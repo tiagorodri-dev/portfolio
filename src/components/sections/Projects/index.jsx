@@ -1,10 +1,10 @@
+import AnimatedSection from "../../ui/AnimatedSection";
 import Text from "../../ui/Title";
+import Technologies from "./Technologies";
 import websiteOrcaDiversoes from "../../../assets/website_orca_diversoes.webp";
 import sistemaMercadinhoRodrigues from "../../../assets/sistema_mercadinho_rodrigues.webp";
 import websiteSalaoDoIrlando from "../../../assets/website_salao_do_irlando.webp";
-import Technologies from "./Technologies";
 import "./style.css";
-import AnimatedSection from "../../ui/AnimatedSection";
 
 function Projects() {
 

@@ -1,12 +1,17 @@
 .session-projects {
-    background-color: #000000;
-    padding: 3em 3em 0 3em;
+  background-color: #000000;
+  padding: 3em 3em 0 3em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1481%26quot%3b)' fill='none'%3e%3crect width='1440' height='250' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1482%26quot%3b)'%3e%3c/rect%3e%3cpath d='M7 250L257 0L335 0L85 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1483%26quot%3b)'%3e%3c/path%3e%3cpath d='M267.6 250L517.6 0L828.1 0L578.1 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1483%26quot%3b)'%3e%3c/path%3e%3cpath d='M510.20000000000005 250L760.2 0L902.7 0L652.7 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1483%26quot%3b)'%3e%3c/path%3e%3cpath d='M718.8000000000001 250L968.8000000000001 0L1103.8000000000002 0L853.8000000000001 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1483%26quot%3b)'%3e%3c/path%3e%3cpath d='M1408 250L1158 0L1024.5 0L1274.5 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1484%26quot%3b)'%3e%3c/path%3e%3cpath d='M1170.4 250L920.4000000000001 0L858.9000000000001 0L1108.9 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1484%26quot%3b)'%3e%3c/path%3e%3cpath d='M931.8 250L681.8 0L446.29999999999995 0L696.3 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1484%26quot%3b)'%3e%3c/path%3e%3cpath d='M680.1999999999999 250L430.19999999999993 0L145.19999999999993 0L395.19999999999993 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1484%26quot%3b)'%3e%3c/path%3e%3cpath d='M1245.8204250196686 250L1440 55.82042501966856L1440 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1483%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 250L194.17957498033144 250L 0 55.82042501966856z' fill='url(%26quot%3b%23SvgjsLinearGradient1484%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1481'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1482'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 136%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1483'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1484'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 .projects {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .card-img-top {
-    border-radius: 10px;
+  border-radius: 10px;
 }
